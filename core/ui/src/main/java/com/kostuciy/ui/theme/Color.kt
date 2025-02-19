@@ -1,4 +1,4 @@
-package com.kostuciy.stocktube.ui.theme
+package com.kostuciy.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
