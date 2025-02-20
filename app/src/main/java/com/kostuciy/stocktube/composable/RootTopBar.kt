@@ -44,7 +44,7 @@ fun RootTopBar(
             }
         },
         actions = {
-            if (currentDestination != AppDestinations.PLAYER) {
+            if (currentDestination == AppDestinations.FEED) {
                 AppBarButton(
                     icon = Icons.Filled.Menu,
                 ) { onHistoryButtonClick() }
