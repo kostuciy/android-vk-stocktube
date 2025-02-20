@@ -3,6 +3,8 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.dagger.hilt)
+    alias(libs.plugins.kotlin.ksp)
 }
 
 android {
@@ -68,4 +70,8 @@ dependencies {
 
 //    Serialization
     implementation(libs.kotlinx.serialization.json)
+
+//    DI
+    implementation(libs.hilt.android)
+    ksp(libs.hilt.compiler)
 }
